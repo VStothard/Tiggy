@@ -1,0 +1,23 @@
+.C04-cta-bar {
+    background: $gold;
+    color: $white;
+    padding: 80px 0px;
+    text-align: center;
+
+    @include breakpoint(large) {
+        padding: 120px 0px;
+    }
+
+    p {
+        margin-top: 40px;
+        font-size: 20px;
+
+        @include breakpoint(large) {
+            font-size: 25px;
+        }
+    }
+
+    .button {
+        margin-top: 40px;
+    }
+}

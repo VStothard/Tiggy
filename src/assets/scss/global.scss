@@ -61,6 +61,16 @@ body {
     }
 }
 
+.outline-button-white {
+    border-color: white;
+    color: $white;
+    
+    &:hover {
+        background: $white;
+        color: $gold;
+    }
+}
+
 .vertical-center {
     border: 1px solid red;
     min-height: 40%;

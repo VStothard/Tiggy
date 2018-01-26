@@ -1,5 +1,10 @@
 .C03-list-columns {
     text-align: center;
+    padding: 40px 0;
+
+    @include breakpoint(medium) {
+        padding: 70px;
+    }
     
     ul {
         list-style: none;
