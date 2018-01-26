@@ -8,7 +8,10 @@ $white    : #ffffff;
 //General Settings
 
 body {
+    opacity: 0;
     padding: 0;
+    transition: opacity 2s;
+    transform: translateY(20px);
 
     @include breakpoint (mediumtab) {
         padding: 20px 20px;

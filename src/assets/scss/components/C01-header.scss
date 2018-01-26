@@ -44,31 +44,35 @@
             max-width: 500px;
             position: absolute;
             bottom: 20%;
-        }
 
-        .arrow {
-            cursor: pointer;
-            position: absolute;
-            bottom: 20px;
-            transition: 0.2s all;
-
-            @include breakpoint(large) {
-                bottom: 40px;
-            }
-
-            svg {
-                width: 15px;
+            + a {
+                cursor: pointer;
+                position: absolute;
+                bottom: 20px;
+                transition: 0.2s all;
 
                 @include breakpoint(large) {
-                    width: 20px;
+                    bottom: 40px;
+                }
+
+                svg {
+                    width: 15px;
+
+                    @include breakpoint(large) {
+                        width: 20px;
+                    }
+                }
+
+                &:hover {
+                    transform: translateY(5px);
+                    transition: 0.2s all;
                 }
             }
-
-            &:hover {
-                transform: translateY(5px);
-                transition: 0.2s all;
-            }
         }
+
+        // .arrow {
+            
+        // }
     }
 
     .header-profile {
