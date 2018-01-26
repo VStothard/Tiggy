@@ -1,0 +1,46 @@
+//COLORS
+
+$gold     : #E4B498;
+$greyplum : #373339;
+$white    : #ffffff;
+
+//General Settings
+
+body {
+    padding: 0;
+
+    @include breakpoint (mediumtab) {
+        padding: 20px 20px;
+    }
+
+    @include breakpoint(xlarge) {
+        padding: 40px 0;
+    }
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.gold {
+    color: #E4B498;
+}
+
+.outline-button {
+    background: none;
+    border: 3px solid $gold;
+    font-size: 20px;
+    font-weight: 700;
+
+    &:hover {
+        background: $gold;
+    }
+}
+
+.vertical-center {
+    border: 1px solid red;
+    min-height: 40%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}

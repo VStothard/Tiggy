@@ -1,0 +1,67 @@
+.C01-header {
+    background: $greyplum;
+    color: $white;
+    overflow: hidden;
+
+    @include breakpoint(large) {
+        background: none;
+    }
+
+    .header-intro {
+        background: none;
+        min-height: 100vh;
+        padding: 20px;
+        position: relative;
+
+        @include breakpoint (mediumtab only) {
+            min-height: 50vh;
+        }
+
+        @include breakpoint(large) {
+            background: $greyplum;
+        }
+
+        @include breakpoint(xlarge) {
+            min-height: 90vh;
+            padding: 40px;
+        }
+
+        h1,
+        h2 {
+            font-size: 35px;
+            padding-bottom: 40px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .header-intro-content {
+            max-width: 500px;
+            position: absolute;
+            bottom: 20%;
+        }
+
+        .arrow {
+            cursor: pointer;
+            position: absolute;
+            bottom: 40px;
+        }
+    }
+
+    .header-profile {
+        background-image: url('../img/verity-profile.jpg');
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+
+        @include breakpoint (mediumtab only) {
+            min-height: 50vh;
+        }
+
+        @include breakpoint(xlarge) {
+            min-height: 90vh;
+        }
+    }
+}
