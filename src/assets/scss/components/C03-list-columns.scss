@@ -1,0 +1,23 @@
+.C03-list-columns {
+    text-align: center;
+    
+    ul {
+        list-style: none;
+        position: relative;
+        text-align: left;
+
+        .list-icon {
+            height: 30px;
+            position: absolute;
+            left: -40px;
+
+            svg {
+                height: 25px;
+            }
+        }
+
+        li {
+            margin: 15px 0;
+        }
+    }
+}
