@@ -1,0 +1,21 @@
+.C05-footer {
+    text-align: center;
+    padding: 20px 0;
+
+    @include breakpoint(medium) {
+        text-align: left;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        max-width: 300px;
+
+        .social-icon {
+            &:hover {
+                transform: rotate(5deg);
+            }
+        }
+    }
+}

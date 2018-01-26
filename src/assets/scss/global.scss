@@ -64,15 +64,25 @@ body {
 .outline-button-white {
     border-color: white;
     color: $white;
+
+    .link {
+        color: $white;
+    }
     
     &:hover {
         background: $white;
         color: $gold;
+
+        .link {
+            color: $gold;
+            text-decoration: none;
+        } 
     }
+
+
 }
 
 .vertical-center {
-    border: 1px solid red;
     min-height: 40%;
     position: absolute;
     top: 50%;
