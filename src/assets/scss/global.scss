@@ -1,5 +1,6 @@
 //COLORS
 
+$lightgrey: #F8F7F8;
 $gold     : #E4B498;
 $greyplum : #373339;
 $white    : #ffffff;
@@ -18,8 +19,27 @@ body {
     }
 }
 
+.spacer {
+    padding-top: 20px;
+
+    @include breakpoint(large) {
+        padding-top: 40px;
+    }
+}
+
 .bold {
     font-weight: 700;
+}
+
+.link {
+    color: $gold;
+    text-decoration: none;
+
+    &:hover {
+        color: $gold;
+        cursor: pointer;
+        text-decoration: underline;
+    }
 }
 
 .gold {
