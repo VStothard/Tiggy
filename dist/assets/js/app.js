@@ -14588,13 +14588,6 @@ window.$ = _jquery2.default;
 (0, _jquery2.default)(document).ready(function () {
     (0, _jquery2.default)(document).foundation();
 
-    //on load, fade in body
-    (0, _jquery2.default)('body').css({
-        'opacity': '1',
-        'transform': 'translateY(0px)',
-        'transition': 'all 1s'
-    });
-
     (0, _jquery2.default)('.see-more').on('click', function () {
         (0, _jquery2.default)('body').scroll('#featured-work');
     });

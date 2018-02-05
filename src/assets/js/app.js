@@ -14,13 +14,6 @@ import Foundation from 'foundation-sites';
 $(document).ready( () => {
         $(document).foundation();
 
-        //on load, fade in body
-        $('body').css({
-            'opacity' : '1',
-            'transform' : 'translateY(0px)',
-            'transition' : 'all 1s'
-        });
-
         $('.see-more').on('click', () => {
             $('body').scroll('#featured-work')
         });

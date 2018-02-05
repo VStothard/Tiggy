@@ -8,10 +8,7 @@ $white    : #ffffff;
 //General Settings
 
 body {
-    opacity: 0;
     padding: 0;
-    transition: opacity 2s;
-    transform: translateY(20px);
 
     @include breakpoint (mediumtab) {
         padding: 20px 20px;
@@ -60,27 +57,39 @@ a.link {
         font-size: 20px;
     }
 
+    .link,
+    a.link {
+        color: $white;
+    }
+
     &:hover {
         background: $gold;
+
+        .link,
+        a.link {
+            color: $white;
+            text-decoration: none;
+        }
     }
 }
 
 .outline-button-white {
     border-color: white;
     color: $white;
-
-    .link {
+    
+    .link,
+    a.link {
         color: $white;
     }
-    
+
     &:hover {
         background: $white;
-        color: $gold;
 
-        .link {
+        .link,
+        a.link {
             color: $gold;
             text-decoration: none;
-        } 
+        }
     }
 
 
